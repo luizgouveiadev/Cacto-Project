@@ -1,0 +1,506 @@
+[
+    {
+        "nome": "Caixa França M 50x50x66 cm",
+        "altura": 0.50,
+        "comprimento": 0.50,
+        "largura": 0.66,
+        "codigo": "VJ5043"
+    },
+    {
+        "nome": "Caixa França P 50x50x50 cm",
+        "altura": 0.50,
+        "comprimento": 0.50,
+        "largura": 0.50,
+        "codigo": "VJ5042"
+    },
+    {
+        "nome": "Caixa França G 60x60x80 cm",
+        "altura": 0.80,
+        "comprimento": 0.60,
+        "largura": 0.60,
+        "codigo": "VJ5045"
+    },
+    {
+        "nome": "Caixa França GG 90x80x80 cm",
+        "altura": 0.90,
+        "comprimento": 0.80,
+        "largura": 0.80,
+        "codigo": "VJ5293"
+    },
+    {
+        "nome": "Vaso Japão G 54x59x37 cm",
+        "altura": 0.54,
+        "comprimento": 0.59,
+        "largura": 0.37,
+        "codigo": "VJ5076"
+    },
+    {
+        "nome": "Vaso Japão M 45x49x36 cm",
+        "altura": 0.45,
+        "comprimento": 0.49,
+        "largura": 0.36,
+        "codigo": "VJ5075"
+    },
+    {
+        "nome": "Vaso Japão P 36x44x27 cm",
+        "altura": 0.36,
+        "comprimento": 0.44,
+        "largura": 0.27,
+        "codigo": "VJ5074"
+    },
+    {
+        "nome": "Vaso Cilindro G 90x36x36 cm",
+        "altura": 0.90,
+        "comprimento": 0.36,
+        "largura": 0.36,
+        "codigo": "VJ5060"
+    },
+    {
+        "nome": "Vaso Cilindro M 70x36x36 cm",
+        "altura": 0.70,
+        "comprimento": 0.36,
+        "largura": 0.36,
+        "codigo": "VJ5059"
+    },
+    {
+        "nome": "Vaso Cilindro P 50x36x36 cm",
+        "altura": 0.50,
+        "comprimento": 0.36,
+        "largura": 0.36,
+        "codigo": "VJ5058"
+    },
+    {
+        "nome": "Vaso Vértice G 129x27x36 cm",
+        "altura": 1.29,
+        "comprimento": 0.27,
+        "largura": 0.36,
+        "codigo": "VJ5311"
+    },
+    {
+        "nome": "Vaso Vértice M 110x27x36 cm",
+        "altura": 1.10,
+        "comprimento": 0.27,
+        "largura": 0.36,
+        "codigo": "VJ5310"
+    },
+    {
+        "nome": "Vaso Vértice P 91x20x25 cm",
+        "altura": 0.91,
+        "comprimento": 0.20,
+        "largura": 0.25,
+        "codigo": "VJ5309"
+    },
+    {
+        "nome": "Vaso Tóquio G 100x52x33 cm",
+        "altura": 1.00,
+        "comprimento": 0.52,
+        "largura": 0.33,
+        "codigo": "VJ5068"
+    },
+    {
+        "nome": "Vaso Tóquio M 80x46x29 cm",
+        "altura": 0.80,
+        "comprimento": 0.46,
+        "largura": 0.29,
+        "codigo": "VJ5067"
+    },
+    {
+        "nome": "Vaso Porto G 78x63x60 cm",
+        "altura": 0.78,
+        "comprimento": 0.63,
+        "largura": 0.60,
+        "codigo": "VJ5322"
+    },
+    {
+        "nome": "Vaso Porto M 61x49x46 cm",
+        "altura": 0.61,
+        "comprimento": 0.49,
+        "largura": 0.46,
+        "codigo": "VJ5321"
+    },
+    {
+        "nome": "Vaso Torre 73.5x32x26 cm",
+        "altura": 0.735,
+        "comprimento": 0.32,
+        "largura": 0.26,
+        "codigo": "VJ3406"
+    },
+    {
+        "nome": "Vaso Áustria 69x50x35 cm",
+        "altura": 0.69,
+        "comprimento": 0.50,
+        "largura": 0.35,
+        "codigo": "VJ0000"
+    },
+    {
+        "nome": "Jardineira França Alta G 80x120x32 cm",
+        "altura": 0.80,
+        "comprimento": 1.20,
+        "largura": 0.32,
+        "codigo": "VJ5051"
+    },
+    {
+        "nome": "Jardineira França Alta M 80x100x32 cm",
+        "altura": 0.80,
+        "comprimento": 1.00,
+        "largura": 0.32,
+        "codigo": "VJ5050"
+    },
+    {
+        "nome": "Jardineira França Alta P 80x75x32 cm",
+        "altura": 0.80,
+        "comprimento": 0.75,
+        "largura": 0.32,
+        "codigo": "VJ5049"
+    },
+    {
+        "nome": "Jardineira Baixa G 30x100x26 cm",
+        "altura": 0.30,
+        "comprimento": 1.00,
+        "largura": 0.26,
+        "codigo": "VJ5119"
+    },
+    {
+        "nome": "Jardineira Baixa M 30x80x26 cm",
+        "altura": 0.30,
+        "comprimento": 0.80,
+        "largura": 0.26,
+        "codigo": "VJ5117"
+    },
+    {
+        "nome": "Jardineira Baixa P 30x65x26 cm",
+        "altura": 0.30,
+        "comprimento": 0.65,
+        "largura": 0.26,
+        "codigo": "VJ5118"
+    },
+    {
+        "nome": "Jardineira Alta G 120x130x40 cm",
+        "altura": 1.20,
+        "comprimento": 1.30,
+        "largura": 0.40,
+        "codigo": "VJ5122"
+    },
+    {
+        "nome": "Jardineira Retangular M 60X100X50 cm",
+        "altura": 0.60,
+        "comprimento": 1.00,
+        "largura": 0.50,
+        "codigo": "VJ5124"
+    },
+    {
+        "nome": "Jardineira Alta M 100x100x40 cm",
+        "altura": 1.00,
+        "comprimento": 1.00,
+        "largura": 0.40,
+        "codigo": "VJ5121"
+    },
+    {
+        "nome": "Jardineira Alta P 80x70x40 cm",
+        "altura": 0.80,
+        "comprimento": 0.70,
+        "largura": 0.40,
+        "codigo": "VJ5120"
+    },
+    {
+        "nome": "Jardineira Retangular P 40X100X40 cm",
+        "altura": 0.40,
+        "comprimento": 1.00,
+        "largura": 0.40,
+        "codigo": "VJ5123"
+    },
+    {
+        "nome": "Jardineira Retangular G 80X100X60 cm",
+        "altura": 0.80,
+        "comprimento": 1.00,
+        "largura": 0.60,
+        "codigo": "VJ5125"
+    },
+    {
+        "nome": "Jardineira Austrália M 60x120x50 cm",
+        "altura": 0.60,
+        "comprimento": 1.20,
+        "largura": 0.50,
+        "codigo": "VJ5250"
+    },
+    {
+        "nome": "Jardineira Austrália P 60x110x50 cm",
+        "altura": 0.60,
+        "comprimento": 1.00,
+        "largura": 0.50,
+        "codigo": "VJ5249"
+    },
+    {
+        "nome": "Jardineira Bélgica 30x120x32 cm",
+        "altura": 0.30,
+        "comprimento": 1.00,
+        "largura": 0.32,
+        "codigo": "VJ5252"
+    },
+    {
+        "nome": "Jardineira Flora 55x98x44 cm",
+        "altura": 0.55,
+        "comprimento": 0.98,
+        "largura": 0.44,
+        "codigo": "VJ5318"
+    },
+    {
+        "nome": "Jardineira de Parede 20x80x16 cm",
+        "altura": 0.20,
+        "comprimento": 0.80,
+        "largura": 0.16,
+        "codigo": "VJ5142"
+    },
+    {
+        "nome": "Floreira Canadá G 20x80x16 cm",
+        "altura": 0.20,
+        "comprimento": 0.80,
+        "largura": 0.16,
+        "codigo": "VJ1552"
+    },
+    {
+        "nome": "Floreira Canadá M 20x60x16 cm",
+        "altura": 0.20,
+        "comprimento": 0.60,
+        "largura": 0.16,
+        "codigo": "VJ1551"
+    },
+    {
+        "nome": "Floreira Canadá P 20x40x16 cm",
+        "altura": 0.20,
+        "comprimento": 0.40,
+        "largura": 0.16,
+        "codigo": "VJ1550"
+    },
+    {
+        "nome": "Floreira México 40x80x80 cm",
+        "altura": 0.40,
+        "comprimento": 0.80,
+        "largura": 0.80,
+        "codigo": "VJ5320"
+    },
+    {
+        "nome": "Floreira M 22x100x32 cm",
+        "altura": 0.22,
+        "comprimento": 1.00,
+        "largura": 0.32,
+        "codigo": "VJ5294"
+    },
+    {
+        "nome": "Floreira P 22x80x32 cm",
+        "altura": 0.22,
+        "comprimento": 0.80,
+        "largura": 0.32,
+        "codigo": "VJ5220"
+    },
+    {
+        "nome": "Bacia Ampla 32x73x52 cm",
+        "altura": 0.32,
+        "comprimento": 0.73,
+        "largura": 0.52,
+        "codigo": "VJ5172"
+    },
+    {
+        "nome": "Bacia G 27x80x35 cm",
+        "altura": 0.27,
+        "comprimento": 0.80,
+        "largura": 0.35,
+        "codigo": "VJ1264"
+    },
+    {
+        "nome": "Bacia M 21x58x26 cm",
+        "altura": 0.21,
+        "comprimento": 0.58,
+        "largura": 0.26,
+        "codigo": "VJ5291"
+    },
+    {
+        "nome": "Bacia P 17x43x21 cm",
+        "altura": 0.17,
+        "comprimento": 0.43,
+        "largura": 0.21,
+        "codigo": "VJ1266"
+    },
+    {
+        "nome": "Bacia PP 10X24X14 cm",
+        "altura": 0.10,
+        "comprimento": 0.24,
+        "largura": 0.14,
+        "codigo": "VJ1267"
+    },
+    {
+        "nome": "Vaso Colmeia 28x20x20x29 cm",
+        "altura": 0.26,
+        "comprimento": 0.20,
+        "largura": 0.29,
+        "codigo": "VJ901"
+    },
+    {
+        "nome": "Vaso Atlas G 90x80x80 cm",
+        "altura": 0.90,
+        "comprimento": 0.80,
+        "largura": 0.80,
+        "codigo": "VJ5165"
+    },
+    {
+        "nome": "Vaso Atlas M 70x80x80 cm",
+        "altura": 0.70,
+        "comprimento": 0.80,
+        "largura": 0.80,
+        "codigo": "VJ5164"
+    },
+    {
+        "nome": "Vaso Atlas P 50x80x80 cm",
+        "altura": 0.50,
+        "comprimento": 0.80,
+        "largura": 0.80,
+        "codigo": "VJ5163"
+    },
+    {
+        "nome": "Vaso Tulipa G 94x34x21 cm",
+        "altura": 0.94,
+        "comprimento": 0.34,
+        "largura": 0.21,
+        "codigo": "VJ5279"
+    },
+    {
+        "nome": "Vaso Tulipa M 71x34x21 cm",
+        "altura": 0.71,
+        "comprimento": 0.34,
+        "largura": 0.21,
+        "codigo": "VJ3415"
+    },
+    {
+        "nome": "Vaso Suécia XG 100x120x76 cm",
+        "altura": 1.00,
+        "comprimento": 1.20,
+        "largura": 0.76,
+        "codigo": "VJ5113"
+    },
+    {
+        "nome": "Vaso Suécia GG 71x100x66 cm",
+        "altura": 0.71,
+        "comprimento": 1.00,
+        "largura": 0.66,
+        "codigo": "VJ5112"
+    },
+    {
+        "nome": "Vaso Suécia G 58x90x59 cm",
+        "altura": 0.58,
+        "comprimento": 0.90,
+        "largura": 0.59,
+        "codigo": "VJ5111"
+    },
+    {
+        "nome": "Vaso Suécia M 45x69x44 cm",
+        "altura": 0.45,
+        "comprimento": 0.69,
+        "largura": 0.44,
+        "codigo": "VJ5110"
+    },
+    {
+        "nome": "Vaso Suécia P 32x45x31 cm",
+        "altura": 0.32,
+        "comprimento": 0.45,
+        "largura": 0.31,
+        "codigo": "VJ5109"
+    },
+    {
+        "nome": "Vaso Suécia PP 24x32x21 cm",
+        "altura": 0.24,
+        "comprimento": 0.32,
+        "largura": 0.21,
+        "codigo": "VJ5295"
+    },
+    {
+        "nome": "Vaso Malta GG 113x86x75x126 cm",
+        "altura": 1.13,
+        "comprimento": 0.86,
+        "largura": 0.75,
+        "codigo": "VJ5108"
+    },
+    {
+        "nome": "Vaso Malta G 90x69x41x96 cm",
+        "altura": 0.90,
+        "comprimento": 0.69,
+        "largura": 0.41,
+        "codigo": "VJ5107"
+    },
+    {
+        "nome": "Vaso Malta M 67x51x43x76 cm",
+        "altura": 0.67,
+        "comprimento": 0.51,
+        "largura": 0.43,
+        "codigo": "VJ5106"
+    },
+    {
+        "nome": "Vaso Malta P 51x38x35x55 cm",
+        "altura": 0.51,
+        "comprimento": 0.38,
+        "largura": 0.35,
+        "codigo": "VJ5105"
+    },
+    {
+        "nome": "Vaso Irlanda 80x69x44 cm",
+        "altura": 0.80,
+        "comprimento": 0.69,
+        "largura": 0.44,
+        "codigo": "VJ4869"
+    },
+    {
+        "nome": "Vaso Imperial 130x71x43 cm",
+        "altura": 1.30,
+        "comprimento": 0.71,
+        "largura": 0.43,
+        "codigo": "VJ5162"
+    },
+    {
+        "nome": "Vaso Londres G 85x46x30 cm",
+        "altura": 0.85,
+        "comprimento": 0.46,
+        "largura": 0.30,
+        "codigo": "VJ5063"
+    },
+    {
+        "nome": "Vaso Londres M 70x38x26 cm",
+        "altura": 0.70,
+        "comprimento": 0.38,
+        "largura": 0.26,
+        "codigo": "VJ5062"
+    },
+    {
+        "nome": "Vaso Londres P 57x30x19 cm",
+        "altura": 0.57,
+        "comprimento": 0.30,
+        "largura": 0.19,
+        "codigo": "VJ5061"
+    },
+    {
+        "nome": "Vaso Grécia 73x27x24 cm",
+        "altura": 0.73,
+        "comprimento": 0.27,
+        "largura": 0.24,
+        "codigo": "VJ4958"
+    },
+    {
+        "nome": "Vaso Marina G 75x50x33 cm",
+        "altura": 0.75,
+        "comprimento": 0.50,
+        "largura": 0.33,
+        "codigo": "VJ5053"
+    },
+    {
+        "nome": "Vaso Marina M 61x46x31 cm",
+        "altura": 0.61,
+        "comprimento": 0.46,
+        "largura": 0.31,
+        "codigo": "VJ5047"
+    },
+    {
+        "nome": "Vaso Marina P 43x35x22 cm",
+        "altura": 0.43,
+        "comprimento": 0.35,
+        "largura": 0.22,
+        "codigo": "VJ5048"
+    }
+]
