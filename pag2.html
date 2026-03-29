@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasos com cenográfia</title>
+    <link rel="stylesheet" href="body.css">
+    <link rel="icon" href="img/icone.png">
+
+</head>
+<!-- sandubinha-->
+
+<body class="pagina2">
+
+    <!-- Botão hambúrguer -->
+    <div class="menu-btn">☰</div>
+    <!-- Menu lateral -->
+    <div id="menu" class="menu">
+        <a href="index.html">Plantio</a>
+        <a href="pag2.html">Cenográfico</a>
+        <a href="pag3.html">Jardim</a>
+    </div>
+    <div id="pagina-orcamento">
+
+        <p>Orçamento para vasos com cenográfia</p>
+        <!-- TUDO que você já tem fica aqui dentro -->
+
+
+        <!-- sandubinha-->
+
+
+        <!-- TOPO -->
+        <div class="topo">
+            <div class="gif">
+                <img src="img/cacto2.gif" alt="Animação">
+            </div>
+
+            <div class="logo">
+                <img src="img/logoconceito.png">
+            </div>
+        </div>
+
+        <!-- INPUT -->
+        <div class="input-container">
+            <form onsubmit="adicionarVasos(); return false;">
+                <input type="text" id="buscar" placeholder="Digite o nome do vaso ou cód." oninput="mostrarInfoVaso()">
+                <input type="number" id="qtd" placeholder="Quantidade" min="1" value="1">
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+
+        <!-- INFO DINÂMICA (JS usa) -->
+
+
+        <!-- TABELA -->
+        <div class="tabela">
+            <div class="item header">
+                <div class="celula">Vaso</div>
+                <div class="celula">Cod. Conceito</div>
+                <div class="celula">Altura (H)</div>
+                <div class="celula">Comprimento (C)</div>
+                <div class="celula">Largura (L)</div>
+                <div class="celula">Volume do vaso (Vm³)</div>
+                <div class="celula">Casca de Pinus (L)</div>
+                <div class="celula">Argila (L)</div>
+            </div>
+
+            <!-- LINHAS VÃO SER INSERIDAS PELO JS -->
+            <div id="linhas"></div>
+        </div>
+
+        <div class="resumo-container">
+
+            <div id="lista-container">
+                <h2>Itens do orçamento</h2>
+                <div id="lista"></div>
+            </div>
+
+            <div id="resultado-container">
+                <h2>Resultado</h2>
+                <p id="resultado"></p>
+            </div>
+            <button onclick="copiar()">Copiar Orçamento</button>
+        </div>
+        <script src="Base.js"></script>
+        <footer class="rodape">
+            © 2026 - Sistema de Orçamento de Vasos versão 0.1.2 | Desenvolvido por Matheus Defelippe (Dev/MT)
+        </footer>
+    </div>
+
+    <div id="pagina-relatorios" style="display:none;">
+        <h2>Relatórios</h2>
+        <p>Em construção...</p>
+    </div>
+
+</body>
+
+</html>

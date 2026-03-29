@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento Jardim</title>
+    <link rel="stylesheet" href="body.css">
+    <link rel="icon" href="img/icone.png">
+</head>
+
+<body class="pagina3">
+
+    <!-- MENU -->
+    <div class="menu-btn">☰</div>
+    <div class="menu">
+        <a href="index.html">Plantio</a>
+        <a href="pag2.html">Cenográfico</a>
+        <a href="pag3.html">Jardim</a>
+    </div>
+    <p>Pagina em construção</p>
+
+    <!-- TOPO -->
+    <div class="topo">
+        <div class="gif">
+            <img src="img/cacto2.gif" alt="Animação">
+        </div>
+
+        <div class="logo">
+            <img src="img/logoconceito.png">
+        </div>
+    </div>
+
+    <!-- INPUT -->
+    <div class="input-container">
+        <input type="number" id="comprimento" placeholder="Comprimento (m)">
+        <input type="number" id="largura" placeholder="Largura (m)">
+        <button onclick="calcularJardim()">Calcular</button>
+    </div>
+
+    <!-- RESULTADO -->
+    <div class="resumo-container">
+        <div id="resultado-container">
+            <h2>Resultado</h2>
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+    <script>
+        function calcularJardim() {
+            const comp = Number(document.getElementById("comprimento").value);
+            const larg = Number(document.getElementById("largura").value);
+
+            if (!comp || !larg) {
+                alert("Preencha os valores!");
+                return;
+            }
+
+            // 🔥 AREA
+            const area = comp * larg;
+
+            // 🔥 CALCULOS
+            const terra = area * 1; // 1m³ por m²
+            const grama = area * 25; // 25 placas
+            const pinus = area; // 1 saco por m²
+            const seixo = area; // 1 saco por m²
+
+            // RESULTADO
+            document.getElementById("resultado").innerHTML = `
+                <div>Área: ${area.toFixed(2)} m²</div>
+                <div>Terra: ${terra.toFixed(2)} m³</div>
+                <div>Grama: ${Math.ceil(grama)} placas</div>
+                <div>Casca de Pinus: ${Math.ceil(pinus)} sacos (35L)</div>
+                <div>Seixo: ${Math.ceil(seixo)} sacos (50L)</div>
+            `;
+        }
+        <button onclick="copiar()">Copiar Orçamento</button>
+        </[div >
+            <script src="Base.js"></script>
+    <footer class="rodape">
+        © 2026 - Sistema de Orçamento de Vasos versão 0.1.2 | Desenvolvido por Matheus Defelippe (Dev/MT)
+    </footer>
+    </div>
+
+    <div id="pagina-relatorios" style="display:none;">
+        <h2>Relatórios</h2>
+        <p>Em construção...</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+/* ================= FUNDO ================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Página 1 - VERDE */
+.pagina1 {
+    background: linear-gradient(to bottom,
+            #ffffff 0%,
+            #ffffff 50%,
+            #e9f7f4 80%,
+            #cfeee8 90%,
+            hsl(169, 43%, 81%) 100%);
+}
+
+/* Página 2 - ROXO */
+.pagina3 {
+    background: linear-gradient(to bottom,
+            #ffffff 0%,
+            #ffffff 50%,
+            #f3ecfb 80%,
+            #e2d4f7 90%,
+            #b89ce6 100%);
+}
+
+/* Página 3 - AZUL */
+.pagina2 {
+    background: linear-gradient(to bottom,
+            #ffffff 0%,
+            #ffffff 50%,
+            #eaf4fb 80%,
+            #d4e7f8 90%,
+            #8fbce9 100%);
+}
+
+/* ================= TOPO ================= */
+
+.topo {
+    position: relative;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif img {
+    position: absolute;
+    left: 15px;
+    top: -40px;
+    width: 120px;
+}
+
+.logo img {
+    width: 120px;
+    margin-top: 30px;
+}
+
+/* ================= INPUT ================= */
+
+.input-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+input {
+    padding: 10px;
+    width: 220px;
+    margin: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    background-color: #4fbfa8;
+    color: white;
+    font-weight: bold;
+}
+
+/* ================= TABELA ================= */
+
+.tabela {
+    margin-bottom: 30px;
+}
+
+#lista {
+    margin-top: 10px;
+}
+
+.item {
+    display: grid;
+    gap: 0;
+}
+
+/* Página 1 */
+.pagina1 .item {
+    grid-template-columns: repeat(9, 1fr);
+}
+
+/* Página 2 */
+.pagina2 .item {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+/* Página 3 */
+.pagina3 .item {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+/* ================= CABEÇALHO ================= */
+
+.header {
+    background-color: #dfeeee;
+    font-weight: bold;
+}
+
+.header .celula {
+    background-color: #d9eaea;
+}
+
+/* ================= CÉLULAS ================= */
+
+.celula {
+    border: 1px solid #bbb;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    font-size: 14px;
+}
+
+/* ================= LINHAS ================= */
+
+.linha:hover {
+    background-color: #e6f7f4;
+}
+
+.linha:nth-child(even) .celula {
+    background-color: #f7fcfb;
+}
+
+/* ================= RESUMO ================= */
+
+.resumo-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+#lista-container,
+#resultado-container {
+    width: 300px;
+}
+
+#lista button {
+    font-size: 9px;
+    padding: 1px 4px;
+    margin-left: 6px;
+    background-color: #4fbfa8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#lista div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+#resultado {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ================= RODAPÉ ================= */
+
+.rodape {
+    margin-top: auto;
+    text-align: center;
+    font-size: 12px;
+    padding: 40px;
+    color: #777;
+}
+
+/* ================= MENU ================= */
+
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* BASE DO MENU */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -180px;
+    width: 180px;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+/* MENU POR PÁGINA (🔥 AQUI ESTÁ A MÁGICA) */
+
+/* Página 1 - Verde */
+.pagina1 .menu {
+    background: linear-gradient(to bottom,
+            rgba(233, 247, 244, 0.75),
+            rgba(207, 238, 232, 0.75),
+            rgba(168, 221, 212, 0.75),
+            rgba(126, 207, 195, 0.75));
+}
+
+/* Página 2 - Roxo */
+.pagina2 .menu {
+    background: linear-gradient(to bottom,
+            rgba(232, 243, 251, 0.75),
+            rgba(207, 228, 247, 0.75),
+            rgba(169, 205, 238, 0.75),
+            rgba(106, 169, 233, 0.75));
+}
+
+/* Página 3 - Azul */
+.pagina3 .menu {
+
+
+    background: linear-gradient(to bottom,
+            rgba(243, 236, 251, 0.75),
+            rgba(226, 212, 247, 0.75),
+            rgba(214, 198, 241, 0.75),
+            rgba(190, 166, 228, 0.75));
+}
+
+/* abrir menu */
+.menu:hover,
+.menu-btn:hover+.menu {
+    right: 0;
+}
+
+/* LINKS */
+
+.menu a {
+    display: block;
+    color: rgb(142, 142, 142);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.25s;
+
+}
+
+/* HOVER POR PÁGINA */
+
+.pagina1 .menu a:hover {
+    background: linear-gradient(to bottom,
+            rgba(233, 247, 244, 0.85),
+            rgba(207, 238, 232, 0.85),
+            rgba(168, 221, 212, 0.85),
+            rgba(126, 207, 195, 0.85));
+    color: #2c7a6b;
+
+}
+
+.pagina2 .menu a:hover {
+    background: linear-gradient(to bottom,
+            rgba(233, 247, 244, 0.85),
+            rgba(207, 238, 232, 0.85),
+            rgba(168, 221, 212, 0.85),
+            rgba(126, 207, 195, 0.85));
+    backdrop-filter: blur(5px);
+    color: #6d4bb3;
+}
+
+.pagina3 .menu a:hover {
+    background-color: rgba(106, 169, 233, 0.2);
+    color: #2f6fb3;
+}
