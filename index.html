@@ -45,6 +45,9 @@
                 <input type="text" id="buscar" placeholder="Digite o nome do vaso ou cód." oninput="mostrarInfoVaso()">
                 <input type="number" id="qtd" placeholder="Quantidade" min="1" value="1">
                 <button type="submit">Adicionar</button>
+                <button type="button" onclick="event.preventDefault(); adicionarVasoSobMedida()">
+                    + Vaso sob medida
+                </button>
             </form>
         </div>
 
@@ -84,7 +87,7 @@
         </div>
         <script src="Base.js"></script>
         <footer class="rodape">
-            © 2026 - Sistema de Orçamento de Vasos versão 0.1.2 | Desenvolvido por Matheus Defelippe (Dev/MT)
+            © 2026 - Sistema de Orçamento de Vasos v0.1.4 | Desenvolvido por Matheus Defelippe (Dev/MT)
         </footer>
     </div>
 

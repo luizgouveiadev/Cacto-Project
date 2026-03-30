@@ -129,7 +129,7 @@ button {
 /* ================= CÉLULAS ================= */
 
 .celula {
-    border: 1px solid #bbb;
+    border: 1px solid rgba(0, 0, 0, 0.08);
     padding: 5px;
     text-align: center;
     background-color: white;
@@ -293,4 +293,40 @@ button {
 .pagina3 .menu a:hover {
     background-color: rgba(106, 169, 233, 0.2);
     color: #2f6fb3;
+}
+
+/* INPUT DENTRO DA CÉLULA (SEM CONTORNO NENHUM) */
+.celula input {
+    width: 100%;
+    height: 28px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    text-align: center;
+    font-size: 14px;
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+    appearance: none;
+}
+
+/* REMOVE QUALQUER FOCO VISUAL */
+.celula input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+/* remove setinhas do number (Chrome, Edge) */
+.celula input[type=number]::-webkit-inner-spin-button,
+.celula input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* remove setinhas Firefox */
+.celula input[type=number] {
+    -moz-appearance: textfield;
 }

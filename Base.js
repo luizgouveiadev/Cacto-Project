@@ -47,7 +47,27 @@ function isPagina2() {
 let orcamento = [];
 
 
-// ADICIONAR VASO
+// ADICIONAR VASO SOB MEDIDA
+function adicionarVasoSobMedida() {
+    const vaso = {
+        nome: "Sob medida",
+        codigo: "SM",
+        altura: 0,
+        comprimento: 0,
+        largura: 0,
+        volume: 0,
+        terra: 0,
+        argila: 0,
+        manta: 0,
+        editavel: true
+    };
+
+    orcamento.push({ vaso, quantidade: 1 });
+    atualizarTela();
+}
+
+
+// ADICIONAR VASO NORMAL
 function adicionarVasos() {
     if (vasos.length === 0) {
         alert("Produtos ainda não carregaram!");
@@ -67,7 +87,27 @@ function adicionarVasos() {
         return;
     }
 
-    orcamento.push({ vaso, quantidade });
+    orcamento.push({ vaso: { ...vaso }, quantidade });
+    atualizarTela();
+}
+
+
+// EDITAR VASO
+function editarVaso(index, campo, valor) {
+    const vaso = orcamento[index].vaso;
+
+    if (campo === "nome") {
+        vaso.nome = valor;
+    } else {
+        vaso[campo] = Number(valor);
+    }
+
+    // recalcular volume
+    vaso.volume = (vaso.altura || 0) * (vaso.comprimento || 0) * (vaso.largura || 0);
+
+    // recalcular terra
+    vaso.terra = vaso.volume * 0.7;
+
     atualizarTela();
 }
 
@@ -129,22 +169,42 @@ function atualizarTela() {
         const pinusItem = (item.vaso.volume || 0) * 0.45 * item.quantidade;
         const seixoItem = (item.vaso.volume || 0) * 0.45 * item.quantidade;
 
-        linhaTabela.innerHTML = `
-    <div class="celula">${item.vaso.nome}</div>
-    <div class="celula">${item.vaso.codigo || "-"}</div>
-    <div class="celula">${item.vaso.altura || "-"}</div>
-    <div class="celula">${item.vaso.comprimento || "-"}</div>
-    <div class="celula">${item.vaso.largura || "-"}</div>
-    <div class="celula">${item.vaso.volume.toFixed(3)}</div>
+        //  SE FOR EDITÁVEL
+        if (item.vaso.editavel) {
+            linhaTabela.innerHTML = `
+                <div class="celula">
+                    <input value="${item.vaso.nome}" onchange="editarVaso(${index}, 'nome', this.value)">
+                </div>
+                <div class="celula">SM</div>
+                <div class="celula">
+                    <input type="number" value="${item.vaso.altura}" onchange="editarVaso(${index}, 'altura', this.value)">
+                </div>
+                <div class="celula">
+                    <input type="number" value="${item.vaso.comprimento}" onchange="editarVaso(${index}, 'comprimento', this.value)">
+                </div>
+                <div class="celula">
+                    <input type="number" value="${item.vaso.largura}" onchange="editarVaso(${index}, 'largura', this.value)">
+                </div>
+                <div class="celula">${item.vaso.volume.toFixed(3)}</div>
+            `;
+        } else {
+            linhaTabela.innerHTML = `
+                <div class="celula">${item.vaso.nome}</div>
+                <div class="celula">${item.vaso.codigo || "-"}</div>
+                <div class="celula">${item.vaso.altura || "-"}</div>
+                <div class="celula">${item.vaso.comprimento || "-"}</div>
+                <div class="celula">${item.vaso.largura || "-"}</div>
+                <div class="celula">${item.vaso.volume.toFixed(3)}</div>
 
-    ${!pagina2 ? `<div class="celula">${((item.vaso.terra || 0) * item.quantidade).toFixed(3)}</div>` : ""}
-    ${!pagina2 ? `<div class="celula">${((item.vaso.volume || 0) * 0.15 * item.quantidade).toFixed(3)}</div>` : ""}
+                ${!pagina2 ? `<div class="celula">${((item.vaso.terra || 0) * item.quantidade).toFixed(3)}</div>` : ""}
+                ${!pagina2 ? `<div class="celula">${((item.vaso.volume || 0) * 0.15 * item.quantidade).toFixed(3)}</div>` : ""}
 
-    ${pagina2 ? `<div class="celula">${pinusItem.toFixed(3)}</div>` : ""}
-    ${pagina2 ? `<div class="celula">${seixoItem.toFixed(3)}</div>` : ""}
+                ${pagina2 ? `<div class="celula">${pinusItem.toFixed(3)}</div>` : ""}
+                ${pagina2 ? `<div class="celula">${seixoItem.toFixed(3)}</div>` : ""}
 
-    ${!pagina2 ? `<div class="celula">${mantaItem.toFixed(3)}</div>` : ""}
-`;
+                ${!pagina2 ? `<div class="celula">${mantaItem.toFixed(3)}</div>` : ""}
+            `;
+        }
 
         linhas.appendChild(linhaTabela);
 
