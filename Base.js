@@ -134,11 +134,11 @@ function calcularTotais() {
         const larg = item.vaso.largura > 10 ? item.vaso.largura / 100 : item.vaso.largura;
 
         const areaBase = (comp || 0) * (larg || 0);
-        manta += areaBase * 2 * item.quantidade;
+        manta += areaBase * 2.5 * item.quantidade;
 
         if (isPagina2()) {
-            pinus += (item.vaso.volume || 0) * 0.9 * item.quantidade;
-            seixo += (item.vaso.volume || 0) * 0.9 * item.quantidade;
+            pinus += (item.vaso.volume || 0) * 0.45 * item.quantidade;
+            seixo += (item.vaso.volume || 0) * 0.45 * item.quantidade;
         }
     });
 
@@ -164,7 +164,7 @@ function atualizarTela() {
         const larg = item.vaso.largura > 10 ? item.vaso.largura / 100 : item.vaso.largura;
 
         const areaBase = (comp || 0) * (larg || 0);
-        const mantaItem = areaBase * 2 * item.quantidade;
+        const mantaItem = areaBase * 2.5 * item.quantidade;
 
         const pinusItem = (item.vaso.volume || 0) * 0.45 * item.quantidade;
         const seixoItem = (item.vaso.volume || 0) * 0.45 * item.quantidade;
@@ -221,22 +221,22 @@ function atualizarTela() {
     const mantaML = totais.manta / LARGURA_MANTA;
 
     if (!pagina2) {
-        const sacosTerra = totais.terra / 0.02;
+        const sacosTerra = totais.terra / 0.025;
         const sacosArgila = (totais.argila * 1000) / 50;
 
         document.getElementById("resultado").innerHTML = `
         <div>Vasos: ${totais.vasosTotal}</div>
-        <div>Terra: ${totais.terra.toFixed(3)} m³ / ${Math.ceil(sacosTerra)} sacos de 20L</div>
+        <div>Terra: ${totais.terra.toFixed(3)} m³ / ${Math.ceil(sacosTerra)} sacos de 25L</div>
         <div>Argila: ${totais.argila.toFixed(3)} m³ / ${Math.ceil(sacosArgila)} sacos de 50L</div>
         <div>Manta: ${totais.manta.toFixed(3)} m² / ${mantaML.toFixed(2)} metro linear</div>
     `;
     } else {
-        const sacosPinus = (totais.pinus * 1000) / 35;
+        const sacosPinus = (totais.pinus * 1000) / 40;
         const sacosSeixo = (totais.seixo * 1000) / 50;
 
         document.getElementById("resultado").innerHTML = `
         <div>Vasos: ${totais.vasosTotal}</div>
-        <div>Casca de Pinus: ${totais.pinus.toFixed(3)} m³ / ${Math.ceil(sacosPinus)} sacos de 35L</div>
+        <div>Casca de Pinus: ${totais.pinus.toFixed(3)} m³ / ${Math.ceil(sacosPinus)} sacos de 40L</div>
         <div>Argila: ${totais.seixo.toFixed(3)} m³ / ${Math.ceil(sacosSeixo)} sacos de 50L</div>
     `;
     }
@@ -257,16 +257,16 @@ function copiar() {
     texto += `\nTOTAL:\n`;
 
     if (!pagina2) {
-        const sacosTerra = Math.ceil(totais.terra / 0.02);
+        const sacosTerra = Math.ceil(totais.terra / 0.025);
         const sacosArgila = Math.ceil((totais.argila * 1000) / 50);
         const mantaML = totais.manta / LARGURA_MANTA;
 
-        texto += `Terra: ${totais.terra.toFixed(3)} m³ / ${sacosTerra} sacos de 20L\n`;
+        texto += `Terra: ${totais.terra.toFixed(3)} m³ / ${sacosTerra} sacos de 25L\n`;
         texto += `Argila: ${totais.argila.toFixed(3)} m³ / ${sacosArgila} sacos de 50L\n`;
         texto += `Manta: ${totais.manta.toFixed(3)} m² / ${mantaML.toFixed(2)} ML\n`;
 
     } else {
-        const sacosPinus = Math.ceil((totais.pinus * 1000) / 35);
+        const sacosPinus = Math.ceil((totais.pinus * 1000) / 40);
         const sacosArgila = Math.ceil((totais.seixo * 1000) / 50);
 
         texto += `Casca de Pinus: ${totais.pinus.toFixed(3)} m³ / ${sacosPinus} sacos\n`;
